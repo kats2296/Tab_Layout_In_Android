@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kats.tab_layout_android.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color1"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color1"
+        app:tabSelectedTextColor="@android:color/background_light"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabChats"
+            android:background="@color/color1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHATS" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabCalls"
+            android:background="@color/color2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALLS" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabStatus"
+            android:background="@color/color3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STATUS" />
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
